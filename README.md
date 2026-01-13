@@ -15,6 +15,7 @@ Python с использованием библиотек asyncio и websockets 
 ## Инструкция по запуску:
 В одном терминале введите:
 
+```bash
 pip install websockets asyncio
 
 git clone git@github.com:sudoth/Expirement.git
@@ -22,14 +23,22 @@ git clone git@github.com:sudoth/Expirement.git
 cd Expirement
 
 python3 server.py
+```
 
 В другом терминале запустите клиента, выполнив файл client.py:
 
+```bash
 python3 client.py
+```
 
 Следуйте инструкциям в клиентском интерфейсе для участия в эксперименте. Вводите свое имя, делайте предположения о загаданном числе и просматривайте результаты. Обратите внимание, что порт на котором работает программа может быть знаят, в таком случае напишите:
 
+```bash
 sudo lsof -i :8765
+```
+
 и очистите все процессы с помощью:
 
+```bash
 sudo kill -9 <ID>
+```
